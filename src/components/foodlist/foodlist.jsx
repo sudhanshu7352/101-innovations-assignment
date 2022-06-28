@@ -1,13 +1,14 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { useNavigate } from "react-router-dom"
 import icon from "../../icons/square_icon.png"
 import "./foodlist.css"
 export const Food =()=>{
    const [item,setItem] =useState([])
-
+   const navigate =useNavigate()
    useEffect(()=>{
-       axios.get("http://localhost:3000/data").then((res)=>{
-        console.log(res.data)
+       axios.get("http://localhost:3001/data").then((res)=>{
+        // console.log(res.data)
         setItem(res.data)
        })
    },[])
@@ -15,7 +16,7 @@ export const Food =()=>{
         <div className="main_div">
             {
                 item.map((e)=>(
-                    <div >
+                    <div onClick={()=>navigate(`food/${e.code}`)}>
                         <div>
 
                         <img src={icon} alt="icon" />

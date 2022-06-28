@@ -6,3 +6,6 @@
     padding-left: 1em;
     background-color: rgb(69, 128, 69);
 }
+.nav>h2:hover{
+    cursor: pointer;
+}

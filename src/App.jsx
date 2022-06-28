@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
       <Route path="/" element={<Food />} />
-        <Route path="/food/:id" element={<FoodDetails />} />
+        <Route path="/food/:code" element={<FoodDetails />} />
       </Routes>
     </div>
   )

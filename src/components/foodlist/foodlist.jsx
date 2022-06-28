@@ -16,7 +16,7 @@ export const Food =()=>{
         <div className="main_div">
             {
                 item.map((e)=>(
-                    <div onClick={()=>navigate(`food/${e.code}`)}>
+                    <div onClick={()=>navigate(`food/${e.code}`)} key={e.code}>
                         <div>
 
                         <img src={icon} alt="icon" />

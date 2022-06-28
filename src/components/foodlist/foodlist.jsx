@@ -7,9 +7,9 @@ export const Food =()=>{
    const [item,setItem] =useState([])
    const navigate =useNavigate()
    useEffect(()=>{
-       axios.get("http://localhost:3001/data").then((res)=>{
-        // console.log(res.data)
-        setItem(res.data)
+       axios.get("https://sudhanshu7352.github.io/practice/db.json").then((res)=>{
+        console.log(res.data.data)
+        setItem(res.data.data)
        })
    },[])
     return (

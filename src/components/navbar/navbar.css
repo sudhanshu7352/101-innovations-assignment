@@ -1,0 +1,8 @@
+.nav{
+    border: 2px transparent red;
+    width: 100%;
+    display: flex;
+    justify-items: start;
+    padding-left: 1em;
+    background-color: rgb(69, 128, 69);
+}

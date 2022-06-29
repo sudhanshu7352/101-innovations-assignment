@@ -6,7 +6,7 @@
 }
 .upper_div{
     margin: auto;
-    width: 60%;
+    width: 66%;
 }
 tr,th,td,thead,tbody{
     border: 2px solid gray;
@@ -15,7 +15,7 @@ tr,th,td,thead,tbody{
 table{
     margin-top: 20px;
     border-collapse: collapse;
-    width: 60%;
+    width: 66%;
 }
 @media only screen and (max-width: 600px) {
     .upper_div{

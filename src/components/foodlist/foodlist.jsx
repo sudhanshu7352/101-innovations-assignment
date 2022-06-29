@@ -8,7 +8,7 @@ export const Food =()=>{
    const navigate =useNavigate()
    useEffect(()=>{
        axios.get("https://sudhanshu7352.github.io/practice/db.json").then((res)=>{
-        console.log(res.data.data)
+        // console.log(res.data.data)
         setItem(res.data.data)
        })
    },[])

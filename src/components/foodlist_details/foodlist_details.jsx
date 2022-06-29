@@ -9,9 +9,12 @@ export const FoodDetails = () => {
 //   console.log(code);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/data?code=${code}`).then((res) => {
-       console.log(res.data[0]);
-      setItem(res.data[0]);
+    axios.get(`https://sudhanshu7352.github.io/practice/db.json`).then((res) => {
+      //  console.log(res.data.data);
+
+       let ans = res.data.data.filter((e)=>e.code ==code)
+      //  console.log(ans)
+       setItem(ans[0]);
     });
   }, []);
   return (
